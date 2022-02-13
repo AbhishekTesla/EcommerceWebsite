@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:rgb(228, 237, 240); */
+    font-family: cursive;
+}
+
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    display: none;
+}
+
+
+.logo{
+    /* box-shadow: 2px 2px 9px #333; */
+    border-radius: 50%;
+    opacity: 5;
+    height: 290px;
+    display: block;
+    /* margin: 0 auto 50px; */
+
+}
+
+
+input[type="text"],input[type="password"],input[type="email"]{
+    display: block;
+   width: 300px;
+   height: 40px;
+   padding: 20px;
+   border-radius: 5px;
+   background: #fff;
+   border: none;
+   outline: none;
+   margin: 20px 0;
+   text-transform: capitalize;
+   color: #383838;
+   font-size: 14px;
+   /* box-shadow: 0 4px 5px #383838; */
+   border: 1px solid black;
+font-weight: 300;
+font-size: 20px;
+
+   font-family: cursive;
+}
+input:hover{
+    background: #f3eaea;
+}
+::placeholder{
+    color: #383838;
+}
+
+.submit-btn{
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+ 
+  border-radius: 2px;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 30px 0;
+  font-size: 20px;
+
+}
+
+.submit-btn:hover{
+    background-color: #383838;
+    color: #fff;
+}
+
+.checkbox{
+    -webkit-appearance:none;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #383838;
+   background: #f3eaea;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.checkbox:checked{
+    background: #383838;
+}
+
+.checkbox::after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 80%;
+    pointer-events: none;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/980/980401.png') ;
+    background-repeat: no-repeat;
+    display: none;
+    background-size: contain;
+}
+
+label{
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #383838;
+    
+}
+
+label a{
+    color: #383838;
+   
+}
+
+.link{
+    color: #383838;
+    text-transform: capitalize;
+  
+}
+
+
+/* Alert */
+.alert-box{
+    width: 300px;
+    min-height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 100px rgba(0,0,0,0.05);
+    position: absolute;
+    /* position: relative; */
+    top: 58%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+ 
+}
+
+.alert-box.show{
+    opacity: 1;
+    pointer-events: all;
+    top: 50%;
+}
+
+.alert-img{
+    display: block;
+    margin: 10px auto 20px;
+    height: 60px;
+
+}
+
+.alert-msg{
+    color: tomato;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+}

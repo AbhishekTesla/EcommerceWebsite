@@ -1,0 +1,13 @@
+video{
+    display: block;
+    margin: auto auto;
+  height: 800px;
+ 
+}
+.four-0-four-msg {
+text-align: center;
+text-transform: capitalize;
+color: #333;
+font-size: 20px;
+
+}
